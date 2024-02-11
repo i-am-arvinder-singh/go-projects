@@ -1,6 +1,9 @@
 package main
 
 func is_prime(i int) bool {
+	if i == 1 {
+		return false
+	}
 	if i == 2 {
 		return true
 	}
