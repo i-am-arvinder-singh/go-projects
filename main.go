@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-    i := int(1e6)
+    i := int(1e8)
 
     start := time.Now() // get the current time before execution
 
