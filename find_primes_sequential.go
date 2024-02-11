@@ -12,7 +12,7 @@ func is_prime(i int) bool {
 	return true
 }
 
-func find_primes(count int) int {
+func find_primes_sequential(count int) int {
 	total_primes:=0
 	for i:=2; i<=count; i++ {
 		if is_prime(i) {

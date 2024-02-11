@@ -10,7 +10,7 @@ func main() {
 
     start := time.Now() // get the current time before execution
 
-    ans := find_primes(i)
+    ans := find_primes_sequential(i)
 
     elapsed := time.Since(start) // calculate the time difference
 
