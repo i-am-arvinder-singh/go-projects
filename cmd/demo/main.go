@@ -11,6 +11,7 @@ import (
 	"github.com/i-am-arvinder-singh/demo/internal/fair_threads/unfair"
 	pessimisticlockingwithmutexinfloop "github.com/i-am-arvinder-singh/demo/internal/pessimistic-locking-with-mutex/inf_loop"
 	pessimisticlockingwithmutex "github.com/i-am-arvinder-singh/demo/internal/pessimistic-locking-with-mutex/simple"
+	"github.com/i-am-arvinder-singh/demo/internal/https-protocol"
 )
 
 func get_extra_args() int64 {
@@ -49,6 +50,8 @@ func main() {
 	case "mutex_simple":
 		i := get_extra_args()
 		pessimisticlockingwithmutex.Pessimistic_locking_with_mutex(i)
+	case "http_protocol":
+		httpsprotocol.Http_protocol()
 	default:
 		fmt.Println("Invalid mode provided. Please provide a valid mode (fair, unfair, seq).")
 		return
@@ -59,5 +62,6 @@ func main() {
 	if mode != "mutex" {
 		fmt.Println(ans)
 	}
-	fmt.Printf("The find_primes function took %s to execute.\n", elapsed)
+	
+	fmt.Printf("Program took %s to execute.\n", elapsed)
 }
